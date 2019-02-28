@@ -1,2 +1,2 @@
 # eathquake-watcher
-App that gives you the details of earthquakes happened over a period of time
+App that gives you the details of earthquakes happened over a period of time.It shows the markers for all the locations where the earthquakes over the last week have occured.When and if you click ob title of the marker, a popup opens showing the details and the effects of the earthquake in the surrounding cities.Also,if the magnitude of the earthquake is above 4,a red circle below the marker is shown to differentiate between the magnitudes.
