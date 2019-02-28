@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popup_title"
+                android:text="More Information"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"/>
+
+
+            <Button
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/pop_cancel"
+                android:layout_alignParentRight="true"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:layout_below="@id/popup_title"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/popup_list_title"
+                android:text="Surrounding Cities"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_below="@id/popup_title"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/pop_list"
+                android:textSize="16sp"
+                android:layout_below="@id/popup_list_title"
+                android:text="Hello"/>
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="WebViewLayout"
+                android:id="@+id/web_view"
+                android:layout_below="@id/pop_list">
+            </WebView>
+
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Close"
+                android:textSize="18sp"
+                android:id="@+id/popup_dismiss"
+                android:background="@android:color/transparent"
+                android:textColor="@color/colorPrimaryDark"
+                    android:layout_below="@id/web_view"
+                    android:layout_centerHorizontal="true"/>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
